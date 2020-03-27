@@ -1,0 +1,11 @@
+[Unit]
+Description=Carddex CIMS service
+After=network-online.target
+
+[Service]
+Restart=on-failure
+WorkingDirectory=/opt/client-prvcab/
+ExecStart=/usr/bin/node /opt/client-prvcab/server.js
+
+[Install]
+WantedBy=multi-user.target

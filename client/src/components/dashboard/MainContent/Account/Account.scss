@@ -1,0 +1,141 @@
+@import "../../../../styles/base.scss";
+.main-content__account-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  font-family: "Gotham Pro";
+}
+.main-content__account-wrapper h1 {
+  padding-bottom: 0;
+}
+.main-content__main-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  border-top: 1px solid $brandPantonGrey;
+  border-top: -webkit-border-top;
+  border-top: -moz-border-top;
+  border-top: -ms-border-top;
+  height: auto;
+}
+.upload-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.main-content__wrapper-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.main-content__main-settings h3 {
+  padding-top: 0;
+  margin: 0;
+  margin-top: 0.5em;
+}
+.main-content__main-settings-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 2em;
+}
+.main-content__main-settings-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10em;
+  width: 25%;
+}
+.main-content__forms {
+  width: 30em;
+}
+.auth-label__description {
+  padding: 5px 0 0 15px;
+  font-size: 9px;
+  //color: $brandPantonGrey;
+}
+.main-content__change-photo {
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+  font-weight: $light;
+  background-color: $brandPantonGrey;
+  margin-left: 7em;
+  margin-top: 3em;
+}
+.main-content__condition-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 5em;
+  font-size: 0.8em;
+  margin-top: 3em;
+}
+
+.inputfile {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: black;
+  border: 1px solid $brandPantonGrey;
+  border-radius: 10px;
+  padding: 9px;
+  font-weight: $light;
+  font-size: 15px;
+  text-align: center;
+  display: inline-block;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+  border: 1px solid $brandPantonRed;
+}
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+  outline: -webkit-focus-ring-color auto 5px;
+ outline: none;
+}
